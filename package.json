@@ -20,6 +20,8 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "fastify": "^5.3.2",
+    "form-data": "^4.0.2",
+    "fs": "^0.0.1-security",
     "openai": "^4.98.0",
     "zod": "^3.24.4"
   }

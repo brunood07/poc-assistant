@@ -4,6 +4,8 @@ import { z } from 'zod';
 const envSchema = z.object({
   NODE_ENV: z.enum(['dev', 'test', 'production']).default('dev'),
   OPENAI_API_KEY: z.string(),
+  DATABASE_URL: z.string(),
+  JWT_SECRET: z.string(),
 });
 
 const _env = envSchema.safeParse(process.env);
